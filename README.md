@@ -14,3 +14,20 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+# flutter_responsive_ui
+
+A Flutter package to build responsive UI effortlessly without MediaQuery or manual breakpoints.
+
+## Features
+- Responsive Row & Column (auto-scroll)
+- Responsive Grid
+- Responsive Padding, Card, Stack
+- Mobile, Tablet, Desktop support
+- Clean API
+
+## Installation
+```yaml
+dependencies:
+  flutter_responsive_ui: ^1.0.0

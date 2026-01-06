@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'package:flutter_responsive_ui/flutter_responsive_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Responsive Grid Test',
-      theme: ThemeData(useMaterial3: true),
-      home: const HomeScreen(),
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Responsive UI Example')),
+        body: ResponsiveColumn(
+          children: [
+            ResponsiveGrid(
+              children: List.generate(
+                12,
+                (i) => Card(child: Center(child: Text('Item ${i + 1}'))),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
