@@ -1,4 +1,4 @@
-name: flutter_responsive_ui
+name: flutter_responsive_ui_plus
 description: "A Flutter package that provides fully responsive UI widgets
   including Row, Column, Grid, Padding, Text, and Container.
   Automatically adapts layouts for mobile, tablet, and desktop

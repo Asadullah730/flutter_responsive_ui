@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_responsive_ui/src/core/device_screen_type.dart';
+import 'package:flutter_responsive_ui_plus/src/core/device_screen_type.dart';
 import '../core/responsive_builder.dart';
 
 class ResponsiveColumn extends StatelessWidget {
@@ -32,13 +32,13 @@ class ResponsiveColumn extends StatelessWidget {
   List<Widget> _select(DeviceScreenType t) {
     return t == DeviceScreenType.desktop
         ? desktopChildren ??
-              tabletChildren ??
-              children ??
-              mobileChildren ??
-              const []
+            tabletChildren ??
+            children ??
+            mobileChildren ??
+            const []
         : t == DeviceScreenType.tablet
-        ? tabletChildren ?? children ?? mobileChildren ?? const []
-        : mobileChildren ?? children ?? const [];
+            ? tabletChildren ?? children ?? mobileChildren ?? const []
+            : mobileChildren ?? children ?? const [];
   }
 
   @override

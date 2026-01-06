@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_responsive_ui/src/core/device_screen_type.dart';
+import 'package:flutter_responsive_ui_plus/src/core/device_screen_type.dart';
 import 'breakpoints.dart';
 import 'responsive_sizing_info.dart';
 
-typedef ResponsiveWidgetBuilder =
-    Widget Function(BuildContext context, ResponsiveSizingInfo sizing);
+typedef ResponsiveWidgetBuilder = Widget Function(
+    BuildContext context, ResponsiveSizingInfo sizing);
 
 class ResponsiveBuilder extends StatelessWidget {
   final ResponsiveWidgetBuilder builder;
