@@ -1,5 +1,8 @@
 name: flutter_responsive_ui
-description: "A new Flutter project."
+description: "A Flutter package that provides fully responsive UI widgets
+  including Row, Column, Grid, Padding, Text, and Container.
+  Automatically adapts layouts for mobile, tablet, and desktop
+  without manual size calculations."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 
